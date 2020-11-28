@@ -16,10 +16,10 @@ export class AppComponent  {
   }
 
   ngOnInit() {
-    this.selectNewFlop();
+    this.selectNewFlops();
   }
 
-  selectNewFlop() {
+  selectNewFlops() {
     this.flops = this.flopChooser.getTwoRandomFlops();
   }
 
@@ -48,7 +48,7 @@ export class AppComponent  {
   }
 	
   PlayAgain() {
-    this.flops = this.flopChooser.getTwoRandomFlops();
+    this.selectNewFlops();
     this.hideButton = true;
     this.hideResult = true;
   }
