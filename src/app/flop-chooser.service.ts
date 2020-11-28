@@ -26,5 +26,11 @@ export class FlopChooserService {
       second: this.flopData[secondIndex] 
     }
   }
+
+  isChoiceCorrect(choice, other) {
+    return choice.stars <= other.stars
+  }
+
+  
 }
 
